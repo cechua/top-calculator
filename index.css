@@ -1,0 +1,50 @@
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.calculator-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:240px;
+    background-color:#eeeeee;
+}
+
+.calculator-row {
+    display:flex;
+    flex-direction: row;
+    width:240px;
+}
+
+.textbox-field-container {
+    display:flex;
+    flex-direction: column;
+    margin:10px 0
+}
+
+.textbox-container {
+    width:240px;
+    text-align:right;
+    padding:5px 0
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius:3px;
+    cursor:pointer;  
+}
+
+.button:hover {
+    background-color:rgb(204, 204, 204)
+}
+
+.button-2space {
+    width: 110px;
+}
