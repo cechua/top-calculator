@@ -29,6 +29,7 @@
 
 .textbox-container {
     width:240px;
+    height:15px;
     text-align:right;
     padding:5px 0
 }
