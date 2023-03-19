@@ -42,6 +42,7 @@ function clearDisplay() {
     currentNumber = ''
     savedNumber = ''
     history = ''
+    operator = ''
     displayValue(currentNumber)
     updateHistory('clear')
 }
@@ -68,6 +69,8 @@ function onOperatorClick(operatorFunction){
 }
 
 function operate(isFinalCalculation) {
+    if(operator == '' || currentNumber == '')
+        return;
     if(isFinalCalculation)
         updateHistory('sum')
     console.log(operator)    
@@ -86,5 +89,11 @@ function operate(isFinalCalculation) {
             savedNumber = Number(savedNumber) / Number(currentNumber);
             break;
     }
-    displayValue(savedNumber)
+    
+    displayValue(Math.round(savedNumber * 100) /100 )
+}
+
+function deleteNumber() {
+    currentNumber = currentNumber.substring(0,currentNumber.length - 1);
+    displayValue(currentNumber)
 }
